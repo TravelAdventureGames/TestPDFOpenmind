@@ -17,6 +17,7 @@
 		688000D3213461470009B8C4 /* DiaryPDFHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688000D2213461470009B8C4 /* DiaryPDFHelper.swift */; };
 		688000D5213465160009B8C4 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688000D4213465160009B8C4 /* PDFGenerator.swift */; };
 		6898E750214518570079C138 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6898E74F214518570079C138 /* StartVC.swift */; };
+		68D4A3442149BAA90067A552 /* PDFStatisticsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D4A3432149BAA90067A552 /* PDFStatisticsCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		688000D2213461470009B8C4 /* DiaryPDFHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPDFHelper.swift; sourceTree = "<group>"; };
 		688000D4213465160009B8C4 /* PDFGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFGenerator.swift; sourceTree = "<group>"; };
 		6898E74F214518570079C138 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		68D4A3432149BAA90067A552 /* PDFStatisticsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFStatisticsCalculator.swift; sourceTree = "<group>"; };
 		E11BC68C4FA00851A292114D /* Pods_PDFTesterOpenmind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFTesterOpenmind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED0491552D2889C50E8742BD /* Pods-PDFTesterOpenmind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFTesterOpenmind.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDFTesterOpenmind/Pods-PDFTesterOpenmind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 				688000D4213465160009B8C4 /* PDFGenerator.swift */,
 				6867BC572145C188003DF68F /* PDFMailComposer.swift */,
 				6898E74F214518570079C138 /* StartVC.swift */,
+				68D4A3432149BAA90067A552 /* PDFStatisticsCalculator.swift */,
 			);
 			path = PDF;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6898E750214518570079C138 /* StartVC.swift in Sources */,
+				68D4A3442149BAA90067A552 /* PDFStatisticsCalculator.swift in Sources */,
 				688000D5213465160009B8C4 /* PDFGenerator.swift in Sources */,
 				688000BE213449030009B8C4 /* AppDelegate.swift in Sources */,
 				688000D3213461470009B8C4 /* DiaryPDFHelper.swift in Sources */,
@@ -397,7 +401,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94E429579Y;
 				INFOPLIST_FILE = PDFTesterOpenmind/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = nl.traveladventuregames.PDFTesterOpenmind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -413,7 +420,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94E429579Y;
 				INFOPLIST_FILE = PDFTesterOpenmind/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = nl.traveladventuregames.PDFTesterOpenmind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
