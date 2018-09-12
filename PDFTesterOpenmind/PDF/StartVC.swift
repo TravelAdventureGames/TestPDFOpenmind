@@ -15,8 +15,8 @@ class StartVC: UIViewController {
 
         let helper = DiaryPDFHelper()
         let diaryEntries = helper.getDiaries()
-        let generator = PDFGenerator(diaries: diaryEntries)
-        generator.generatePDF(diaries: diaryEntries)
+        let generator = PDFAssembler(diaries: diaryEntries)
+        generator.generatePDF(diaryEntries: diaryEntries)
 
     }
     @IBAction func sendEmail(_ sender: Any) {

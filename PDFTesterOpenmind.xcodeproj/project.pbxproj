@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4054F9D7939110FCE7C3DAAF /* Pods_PDFTesterOpenmind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC35CA41CC5752D79F8BDA9 /* Pods_PDFTesterOpenmind.framework */; };
+		13F1A9B00AFDD186D35BBC3C /* Pods_PDFTesterOpenmind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11BC68C4FA00851A292114D /* Pods_PDFTesterOpenmind.framework */; };
 		6867BC582145C188003DF68F /* PDFMailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6867BC572145C188003DF68F /* PDFMailComposer.swift */; };
 		688000BE213449030009B8C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688000BD213449030009B8C4 /* AppDelegate.swift */; };
 		688000C3213449030009B8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688000C1213449030009B8C4 /* Main.storyboard */; };
@@ -20,8 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3FC35CA41CC5752D79F8BDA9 /* Pods_PDFTesterOpenmind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFTesterOpenmind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D0061D75390F9594B53805C /* Pods-PDFTesterOpenmind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFTesterOpenmind.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDFTesterOpenmind/Pods-PDFTesterOpenmind.release.xcconfig"; sourceTree = "<group>"; };
+		06C64AB0A50376D9BF2C04BB /* Pods-PDFTesterOpenmind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFTesterOpenmind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDFTesterOpenmind/Pods-PDFTesterOpenmind.debug.xcconfig"; sourceTree = "<group>"; };
 		6867BC572145C188003DF68F /* PDFMailComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFMailComposer.swift; sourceTree = "<group>"; };
 		688000BA213449030009B8C4 /* PDFTesterOpenmind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFTesterOpenmind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		688000BD213449030009B8C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +32,8 @@
 		688000D2213461470009B8C4 /* DiaryPDFHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPDFHelper.swift; sourceTree = "<group>"; };
 		688000D4213465160009B8C4 /* PDFGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFGenerator.swift; sourceTree = "<group>"; };
 		6898E74F214518570079C138 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
-		B33545037883998F929BB7F4 /* Pods-PDFTesterOpenmind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFTesterOpenmind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDFTesterOpenmind/Pods-PDFTesterOpenmind.debug.xcconfig"; sourceTree = "<group>"; };
+		E11BC68C4FA00851A292114D /* Pods_PDFTesterOpenmind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFTesterOpenmind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0491552D2889C50E8742BD /* Pods-PDFTesterOpenmind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFTesterOpenmind.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDFTesterOpenmind/Pods-PDFTesterOpenmind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,20 +41,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4054F9D7939110FCE7C3DAAF /* Pods_PDFTesterOpenmind.framework in Frameworks */,
+				13F1A9B00AFDD186D35BBC3C /* Pods_PDFTesterOpenmind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23618E653DCE844518B8E56D /* Pods */ = {
+		677312A4BFBBF847B636ABC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B33545037883998F929BB7F4 /* Pods-PDFTesterOpenmind.debug.xcconfig */,
-				4D0061D75390F9594B53805C /* Pods-PDFTesterOpenmind.release.xcconfig */,
+				E11BC68C4FA00851A292114D /* Pods_PDFTesterOpenmind.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		688000B1213449030009B8C4 = {
@@ -62,8 +61,8 @@
 			children = (
 				688000BC213449030009B8C4 /* PDFTesterOpenmind */,
 				688000BB213449030009B8C4 /* Products */,
-				23618E653DCE844518B8E56D /* Pods */,
-				BFE92F4D65C355D9D9E48943 /* Frameworks */,
+				D93B60E9BBCEFC323C7C5DFE /* Pods */,
+				677312A4BFBBF847B636ABC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,12 +107,13 @@
 			path = PDF;
 			sourceTree = "<group>";
 		};
-		BFE92F4D65C355D9D9E48943 /* Frameworks */ = {
+		D93B60E9BBCEFC323C7C5DFE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3FC35CA41CC5752D79F8BDA9 /* Pods_PDFTesterOpenmind.framework */,
+				06C64AB0A50376D9BF2C04BB /* Pods-PDFTesterOpenmind.debug.xcconfig */,
+				ED0491552D2889C50E8742BD /* Pods-PDFTesterOpenmind.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,12 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 688000CC213449050009B8C4 /* Build configuration list for PBXNativeTarget "PDFTesterOpenmind" */;
 			buildPhases = (
-				8CD43CD5EEFE717BD44670B0 /* [CP] Check Pods Manifest.lock */,
+				DF482C50893049B9624B06AF /* [CP] Check Pods Manifest.lock */,
 				688000B6213449030009B8C4 /* Sources */,
 				688000B7213449030009B8C4 /* Frameworks */,
 				688000B8213449030009B8C4 /* Resources */,
-				50878F6CD6BA9265B770DBAB /* [CP] Embed Pods Frameworks */,
-				C7273065A92C742FAB68855B /* [CP] Copy Pods Resources */,
+				5B5D496B796E5C2A63B926C4 /* [CP] Embed Pods Frameworks */,
+				885164DA030B8B1ED8F7E1D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,25 +186,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		50878F6CD6BA9265B770DBAB /* [CP] Embed Pods Frameworks */ = {
+		5B5D496B796E5C2A63B926C4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PDFTesterOpenmind/Pods-PDFTesterOpenmind-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SimplePDF/SimplePDF.framework",
+				"${BUILT_PRODUCTS_DIR}/TPPDF/TPPDF.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimplePDF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPPDF.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDFTesterOpenmind/Pods-PDFTesterOpenmind-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8CD43CD5EEFE717BD44670B0 /* [CP] Check Pods Manifest.lock */ = {
+		885164DA030B8B1ED8F7E1D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDFTesterOpenmind/Pods-PDFTesterOpenmind-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF482C50893049B9624B06AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,21 +235,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7273065A92C742FAB68855B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDFTesterOpenmind/Pods-PDFTesterOpenmind-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -391,16 +391,13 @@
 		};
 		688000CD213449050009B8C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B33545037883998F929BB7F4 /* Pods-PDFTesterOpenmind.debug.xcconfig */;
+			baseConfigurationReference = 06C64AB0A50376D9BF2C04BB /* Pods-PDFTesterOpenmind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94E429579Y;
 				INFOPLIST_FILE = PDFTesterOpenmind/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.traveladventuregames.PDFTesterOpenmind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -410,16 +407,13 @@
 		};
 		688000CE213449050009B8C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D0061D75390F9594B53805C /* Pods-PDFTesterOpenmind.release.xcconfig */;
+			baseConfigurationReference = ED0491552D2889C50E8742BD /* Pods-PDFTesterOpenmind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 94E429579Y;
 				INFOPLIST_FILE = PDFTesterOpenmind/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.traveladventuregames.PDFTesterOpenmind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
