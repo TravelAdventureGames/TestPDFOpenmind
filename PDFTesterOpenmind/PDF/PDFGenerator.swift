@@ -18,31 +18,56 @@ class PDFGenerator {
         self.diaries = diaries
     }
 
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-
     // MARK: Generates and saves pdf locally
-    func generatePDF(diaries: [DiaryEntry]) {
+    public func generatePDF(diaryEntries: [DiaryEntry]) {
 
         let A4paperSize = CGSize(width: 595, height: 842)
         let pdf = SimplePDF(pageSize: A4paperSize)
-        pdf.setContentAlignment(.left)
-        pdf.addText("De Nations League. Het is een term die je de afgelopen maanden misschien wel vaker voorbij hebt zien komen. 'Iets met dat onbegrijpelijke toernooi wat geen EK is maar wel belangrijk', horen we je denken. Ingewikkeld is de opzet van de Nations League wel een beetje, maar na het lezen van dit artikel hopelijk niet meer!")
+
+        setUpPDFTop(pdf: pdf)
+        setUpPDFPDFStatistics()
+        for entry in diaryEntries {
+            setUpPDFBody(entry: entry, pdf: pdf)
+        }
 
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         let fileUrl = URL(fileURLWithPath: documentsPath)
         let endUrl = fileUrl.appendingPathComponent("diaryPDF")
 
         let pdfData = pdf.generatePDFdata()
+
         do {
             try pdfData.write(to: endUrl, options: .atomicWrite)
         } catch {
             print(error)
         }
+    }
 
+    private func setUpPDFTop(pdf: SimplePDF) {
+        //TODO: add image
+        pdf.addVerticalSpace(30)
+        pdf.addLineSeparator(height: 2)
+    }
+
+    private func setUpPDFPDFStatistics() {
 
     }
+
+    private func setUpPDFBody(entry: DiaryEntry, pdf: SimplePDF) {
+
+        switch entry.type {
+        case .anxiety:
+            pdf.addText("Intensiteit")
+
+        case .depression:
+        case .ruminating:
+        case .sleep:
+        case .stress:
+
+        default:
+            <#code#>
+        }
+    }
+
 }
 
