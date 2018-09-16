@@ -126,6 +126,7 @@ enum Symptom: Int {
 
 
 struct DiaryEntry {
+    let date: Date
     let event: String?
     let symptoms: [Symptom]
     let thoughts: String?

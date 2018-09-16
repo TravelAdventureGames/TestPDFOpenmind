@@ -8,17 +8,18 @@
 
 import Foundation
 
-class PDFStatisticsCalculator {
+// MARK: Gets 1. average intensities for last month of diaries (per type) 2. Selected diaries per type.
+class PDFLayoutAssembler {
 
-    var diaries: [DiaryEntry]
+    var allDiaries: [DiaryEntry]
 
     init(diaries: [DiaryEntry]) {
-        self.diaries = diaries
+        self.allDiaries = diaries
     }
 
     func getAverageIntensityFor(type: DiaryType, diaries: [DiaryEntry]) -> String {
         var acculuatedAmount: Float = 0
-        let filteredDiaries = diaries.filter {$0.type == type }
+        let filteredDiaries = diaries.filter {$0.type == type } //TODO: Add datefilter last month
         if filteredDiaries.count > 0 {
             for diary in filteredDiaries {
                 if let intensity = diary.intensity {
@@ -30,4 +31,8 @@ class PDFStatisticsCalculator {
             return "Geen dagboeken"
         }
     }
+    func getSelectedDiariesFor(type: DiaryType) -> [DiaryEntry] {
+        return allDiaries.filter { $0.type == type }
+    }
+
 }
