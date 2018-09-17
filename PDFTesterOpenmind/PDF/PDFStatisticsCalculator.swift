@@ -26,7 +26,11 @@ class PDFLayoutAssembler {
                     acculuatedAmount += intensity
                 }
             }
-            return "\(acculuatedAmount / Float(filteredDiaries.count))"
+            if type == .sleep {
+                return "\(acculuatedAmount / Float(filteredDiaries.count)) uur slaap"
+            } else {
+                return "\(acculuatedAmount / Float(filteredDiaries.count))"
+            }
         } else {
             return "Geen dagboeken"
         }
